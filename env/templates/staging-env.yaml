@@ -1,0 +1,19 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: staging
+spec:
+  cluster: 35.228.18.222.nip.io
+  kind: Permanent
+  label: Staging
+  namespace: jx-staging
+  order: 100
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Auto
+  source:
+    ref: master
+    url: https://github.com/danold/environment-voicediamond-staging.git
+  teamSettings: {}
+status: {}

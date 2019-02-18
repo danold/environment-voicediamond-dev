@@ -1,0 +1,33 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAPCRAQuUCVCrMs06Mu83BJowDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkZDFlNGRhMmMtYzU2MC00M2RmLThiZmQtZmQ2ZDFiZDFhZDNk
+    MB4XDTE5MDIxODA5MDkxOFoXDTI0MDIxNzEwMDkxOFowLzEtMCsGA1UEAxMkZDFl
+    NGRhMmMtYzU2MC00M2RmLThiZmQtZmQ2ZDFiZDFhZDNkMIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEAo0/ZXl8k+swxwQNqpGx1rdoP23+BXGqE2y2NZMQ8
+    QE3jQiFRmLJZP9fNfoP/qVXk3+kQvves5k6ozrjqhbruuGXEKiisBp28lFVvG5mc
+    +LOpGK+9HaKAYwMpyphgMtGW+oTO3iJ8idrsjSFO66+g+zxK2VosP5QAdcZdb54Z
+    3L6S6JVbI0mkLk1FD5w1sVeLvsSUkfCZJFkEsGWAI5sT38GX2amx53GY6avIEXWd
+    hsCKfmb+YRSBdWCKrYPXshhFDGJUFHBg0ncyxhNZL7ZnF4SJqru1SUHdvv8RBzku
+    aX5j6TSqPgGGVvVQxijcS1l9KiKey4Lr309zp++mxvfqsQIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    V2uuMQCpznadmyczi90ysXvLjsZ1CnGXBKZIh3fdHvfuMQ2056IAB4j8xC31SNDz
+    5+faI36Gzwh+TTkC0zdFbXvbCdaaKGfmH8On/kQXPds9NWS9iKuIEUazmQLw7yVT
+    ywOzFp5LvbNB5LH9GtiEniUVoGMrw/cqFtoNkr2V1OIecd+2vNxYR6+1mf21w8ls
+    Ly24ps3fJ/r5UNu38+uwfb3T3gjU+8mS8ltnpWMJA7/o5AFqt96YUNNQhqYDCwbo
+    Xqf0rJE9L0jmnjt/VpwZSAqbHTPMdBcENsCY24cF2DwrFH7e2wbf3H+/aNXdDRKk
+    P45ZGb/qDO1LcNu2vpkh1Q==
+    -----END CERTIFICATE-----
+  clusterName: fishspring
+  jx-install-version: 1.3.867
+  kubeProvider: gke
+  projectID: daoljx
+  secretsLocation: vault
+  server: https://35.228.51.216
+  zone: europe-north1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config

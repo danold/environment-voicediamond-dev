@@ -1,0 +1,19 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: production
+spec:
+  cluster: 35.228.18.222.nip.io
+  kind: Permanent
+  label: Production
+  namespace: jx-production
+  order: 200
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Manual
+  source:
+    ref: master
+    url: https://github.com/danold/environment-voicediamond-production.git
+  teamSettings: {}
+status: {}
